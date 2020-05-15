@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogHeper", "LogHeper.csproj", "{16DD8990-9E25-4A4A-859C-572481920833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp4", "..\WindowsFormsApp4\WindowsFormsApp4.csproj", "{FE039F6C-6158-4DC7-B874-8302BED29660}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16DD8990-9E25-4A4A-859C-572481920833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DD8990-9E25-4A4A-859C-572481920833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DD8990-9E25-4A4A-859C-572481920833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DD8990-9E25-4A4A-859C-572481920833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE039F6C-6158-4DC7-B874-8302BED29660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE039F6C-6158-4DC7-B874-8302BED29660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE039F6C-6158-4DC7-B874-8302BED29660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE039F6C-6158-4DC7-B874-8302BED29660}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {466F8DC0-1563-4368-BF97-432569A88878}
+	EndGlobalSection
+EndGlobal

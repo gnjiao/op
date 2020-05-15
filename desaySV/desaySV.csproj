@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58797427-282B-4E55-B135-6EEA1D5B3BB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>desaySV</RootNamespace>
+    <AssemblyName>desaySV</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\lcw\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Geo_128px_1230448_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>58B132D0F01E45536238A2A20417B4AD74314A1B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>desaySV_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\AxisParameter.cs" />
+    <Compile Include="Data\Config.cs" />
+    <Compile Include="Data\DataStruct\Stuct.cs" />
+    <Compile Include="Data\Delay.cs" />
+    <Compile Include="Data\Global.cs" />
+    <Compile Include="Data\IOPoints.cs" />
+    <Compile Include="Data\Marking.cs" />
+    <Compile Include="Data\Position.cs" />
+    <Compile Include="Data\ProductConfig.cs" />
+    <Compile Include="Flow\Station1.cs" />
+    <Compile Include="Form\FormProductCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormProductCode.designer.cs">
+      <DependentUpon>FormProductCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmIOmonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmIOmonitor.Designer.cs">
+      <DependentUpon>frmIOmonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\F12_Modifier_Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\F12_Modifier_Number.designer.cs">
+      <DependentUpon>F12_Modifier_Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmParameter.designer.cs">
+      <DependentUpon>frmParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTarget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTarget.designer.cs">
+      <DependentUpon>frmTarget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTeach.designer.cs">
+      <DependentUpon>frmTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmStarting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmStarting.designer.cs">
+      <DependentUpon>frmStarting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FrmTest.designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTrayCalib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTrayCalib.designer.cs">
+      <DependentUpon>frmTrayCalib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmCalib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmCalib.Designer.cs">
+      <DependentUpon>frmCalib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\CameraAxis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CameraAxis.Designer.cs">
+      <DependentUpon>CameraAxis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CameraRelationship.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\CameraRelationship.Designer.cs">
+      <DependentUpon>CameraRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductTeach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ProductTeach.Designer.cs">
+      <DependentUpon>ProductTeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RootAxis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RootAxis.Designer.cs">
+      <DependentUpon>RootAxis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Yaxis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Yaxis.Designer.cs">
+      <DependentUpon>Yaxis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Zaxis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Zaxis.Designer.cs">
+      <DependentUpon>Zaxis.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\FormProductCode.resx">
+      <DependentUpon>FormProductCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmCalib.resx">
+      <DependentUpon>frmCalib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmIOmonitor.resx">
+      <DependentUpon>frmIOmonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\F12_Modifier_Number.resx">
+      <DependentUpon>F12_Modifier_Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmParameter.resx">
+      <DependentUpon>frmParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTarget.resx">
+      <DependentUpon>frmTarget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTeach.resx">
+      <DependentUpon>frmTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmStarting.resx">
+      <DependentUpon>frmStarting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTrayCalib.resx">
+      <DependentUpon>frmTrayCalib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\CameraAxis.resx">
+      <DependentUpon>CameraAxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CameraRelationship.resx">
+      <DependentUpon>CameraRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductTeach.resx">
+      <DependentUpon>ProductTeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RootAxis.resx">
+      <DependentUpon>RootAxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Yaxis.resx">
+      <DependentUpon>Yaxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Zaxis.resx">
+      <DependentUpon>Zaxis.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Release\Config\BoardConfig\Param0.cfg" />
+    <None Include="bin\Release\Config\Model.ini" />
+    <None Include="bin\Release\Config\Tray.ini" />
+    <None Include="bin\Release\sv_Interlocking\SV_Interlocking.exe.config" />
+    <None Include="bin\Release\sv_Interlocking\SV_Interlocking.ini" />
+    <None Include="bin\Release\sv_Interlocking\SV_Interlocking.zip" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedGreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedNone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LedYellow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AxisControlls\AxisControlls.csproj">
+      <Project>{3ae70de9-30b1-471b-bf27-10a4b6a45158}</Project>
+      <Name>AxisControlls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConfigPath\ConfigPath.csproj">
+      <Project>{fbb81835-9127-4d80-84df-e7de8728bc7c}</Project>
+      <Name>ConfigPath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enginee\System.Enginee.csproj">
+      <Project>{bf2fb01d-3d28-42f1-907e-7de72433784f}</Project>
+      <Name>System.Enginee</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\CMotion.Interfaces.csproj">
+      <Project>{e87bbf52-f612-40bb-ad3d-d6a20fd635b1}</Project>
+      <Name>CMotion.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterLocking\InterLocking.csproj">
+      <Project>{c1eab09d-5472-47ac-9554-7566ddd892f7}</Project>
+      <Name>InterLocking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobNumber\JobNumber\JobNumber\JobNumber.csproj">
+      <Project>{e4fc3f2f-98af-487a-b89f-5be20ebf278f}</Project>
+      <Name>JobNumber</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogHeper\LogHeper.csproj">
+      <Project>{16dd8990-9e25-4a4a-859c-572481920833}</Project>
+      <Name>LogHeper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Software.Device\Software.Device.csproj">
+      <Project>{eec0ed61-1d8a-4160-a45a-00268172bec9}</Project>
+      <Name>Software.Device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.ToolKit\System.ToolKit.csproj">
+      <Project>{ef59b053-6939-4338-bb28-6cc2030bc0e1}</Project>
+      <Name>System.ToolKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tray\Motion.Tray.csproj">
+      <Project>{e1772e47-415b-44e2-8e2f-3cc4b5f2a039}</Project>
+      <Name>Motion.Tray</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YAMAHA\YAMAHA\YAMAHA.csproj">
+      <Project>{281fb35e-fe98-4929-95d2-c4bc74af313b}</Project>
+      <Name>YAMAHA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desay SV Logo.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yfront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yrear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\AdvMotAPI.dll" />
+    <Content Include="bin\Release\Config\Config.xml" />
+    <Content Include="bin\Release\Config\Other.xml" />
+    <Content Include="bin\Release\Config\paramAxis.xml" />
+    <Content Include="bin\Release\log4net.dll" />
+    <Content Include="bin\Release\log4netConfig.xml" />
+    <Content Include="bin\Release\log4net_someLogFiles_config.xml" />
+    <Content Include="bin\Release\logConfig.xml" />
+    <Content Include="bin\Release\sv_Interlocking\MesData.dll" />
+    <Content Include="bin\Release\sv_Interlocking\SV_Interlocking.exe" />
+    <Content Include="bin\Release\sv_Interlocking\SV_Interlocking.pdb" />
+    <Content Include="bin\Release\sv_Interlocking\sv_Interlocking_Main.dll" />
+    <Content Include="bin\Release\sv_Interlocking\调用说明.txt" />
+    <Content Include="Geo_128px_1230448_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

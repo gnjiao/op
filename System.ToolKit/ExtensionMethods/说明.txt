@@ -1,0 +1,7 @@
+﻿对于常用的类的拓展方法,不增加Ex后缀
+例如:string Math Random Byte List
+
+对于窗口相关的,增加Ex后缀
+例如:Form Console RichTextBox
+
+文件名带+号的类库中含有拓展方法

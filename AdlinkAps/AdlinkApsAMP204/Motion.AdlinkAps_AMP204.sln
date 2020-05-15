@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMotion.AdlinkAps_AMP204", "CMotion.AdlinkAps_AMP204.csproj", "{4E5618BE-0EE1-4760-B939-893A31EFDF8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E5618BE-0EE1-4760-B939-893A31EFDF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E5618BE-0EE1-4760-B939-893A31EFDF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E5618BE-0EE1-4760-B939-893A31EFDF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E5618BE-0EE1-4760-B939-893A31EFDF8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFFE6212-3D8F-4180-A887-2A0B1B6DF60C}
+	EndGlobalSection
+EndGlobal
